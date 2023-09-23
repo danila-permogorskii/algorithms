@@ -1,10 +1,8 @@
-﻿using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
+﻿namespace MergeSort;
 
 internal static class Program
 {
-	private static void Merge(int[] arr, int[] aux, int low, int mid, int high)
+	private static void Merge(IList<int> arr, IList<int> aux, int low, int mid, int high)
 	{
 		int k = low, i = low, j = mid + 1;
 
@@ -23,7 +21,7 @@ internal static class Program
 			arr[i] = aux[i];
 	}
 
-	private static void MergeSort(int[] arr, int[] aux, int low, int high)
+	private static void MergeSort(IList<int> arr, IList<int> aux, int low, int high)
 	{
 		if (high <= low)
 			return;
@@ -36,11 +34,11 @@ internal static class Program
 		Merge(arr, aux, low, mid, high);
 	}
 
-	private static bool IsSorted(int[] arr)
+	private static bool IsSorted(IReadOnlyList<int> arr)
 	{
 		var prev = arr[0];
 
-		for (int i = 1; i < arr.Length; i++)
+		for (int i = 1; i < arr.Count; i++)
 		{
 			if (prev > arr[i])
 			{
@@ -56,7 +54,7 @@ internal static class Program
 	
 	public static void Main()
 	{
-		var arr = new int[] { 12, 3, 18, 24, 0, 5, -2 };
+		var arr = new[] { 12, 3, 18, 24, 0, 5, -2 };
 		var aux = new int[arr.Length];
 		
 		Array.Copy(arr, aux, arr.Length);
@@ -64,6 +62,6 @@ internal static class Program
 		MergeSort(arr, aux, 0, arr.Length - 1);
 
 		if (IsSorted(arr))
-			Console.WriteLine(string.Join(", ", arr));
+			Console.WriteLine(string.Join (", ", arr));
 	}
 }

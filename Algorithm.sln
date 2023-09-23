@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "MergeSort\Merg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSort", "QuickSort\QuickSort.csproj", "{0C4B763F-D5E0-4D71-A6D0-D7D40E773B62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KaratsubaMultiplication", "KaratsubaMultiplication\KaratsubaMultiplication.csproj", "{73D52B0E-6496-4027-B80F-3631DA71E3A2}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Gilbert-Shennon-Reeds", "Gilbert-Shennon-Reeds\Gilbert-Shennon-Reeds.fsproj", "{1469106F-C563-4C55-B460-D20138DA28D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +76,13 @@ Global
 		{0C4B763F-D5E0-4D71-A6D0-D7D40E773B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C4B763F-D5E0-4D71-A6D0-D7D40E773B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C4B763F-D5E0-4D71-A6D0-D7D40E773B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73D52B0E-6496-4027-B80F-3631DA71E3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D52B0E-6496-4027-B80F-3631DA71E3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D52B0E-6496-4027-B80F-3631DA71E3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D52B0E-6496-4027-B80F-3631DA71E3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1469106F-C563-4C55-B460-D20138DA28D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1469106F-C563-4C55-B460-D20138DA28D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1469106F-C563-4C55-B460-D20138DA28D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1469106F-C563-4C55-B460-D20138DA28D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
